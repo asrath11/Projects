@@ -1,0 +1,122 @@
+/* Reset margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    color: #000;
+    background-color: #000;
+  }
+  
+  /* Container styling */
+  .container {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+  }
+  
+  /* Player sections styling */
+  .player1 {
+    border-right: 2px solid white;
+    background-color: rgb(152, 241, 127);
+  }
+  
+  .player2 {
+    background-color: rgb(207, 231, 200);
+  }
+  
+  .player {
+    text-align: center;
+    padding: 85px 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Score display styling */
+  .score-display {
+    padding: 10px 2px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Controls section styling */
+  .controls {
+    height: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .controls button {
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 18px;
+    outline: none;
+    border: none;
+    cursor: pointer; /* Added cursor pointer */
+    background-color: #57a3ff;
+     /* Added default background color */
+  }
+  
+  .controls button:hover {
+    background-color: #4590e6;
+  }
+  
+  .controls img {
+    width: 100px;
+  }
+  
+  /* Dice options styling */
+  .dice-options {
+    display: flex;
+    gap: 41px;
+    flex-direction: column;
+  }
+  
+  /* Total score styling */
+  .total-score {
+    height: 50px;
+    padding-bottom: 2px;
+    margin-top: 40px;
+  }
+  
+  .current-score{
+    background-color: aquamarine;
+  }
+  /* Individual score styling */
+  .score {
+    width: 300px;
+    height: 60px;
+    padding: 3px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Flash class for transitions */
+  .flash {
+    background-color: white;
+    transition: background-color 0.4s ease-out;
+  }
+  
